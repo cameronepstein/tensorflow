@@ -1,4 +1,4 @@
-# Tensorflow test Applications
+# Tensorflow Test Application
 
 This application categorises fashion MNIST example data using Tensorflow
 
