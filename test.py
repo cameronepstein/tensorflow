@@ -4,9 +4,7 @@ x1 = tf.constant([1,2,3,4])
 x2 = tf.constant([2,35,6,6])
 #multiply both vectors
 result = tf.multiply(x1, x2)
-#init a session
-sess = tf.Session()
-#result in form of tensor
-print(sess.run(result))
-#close session
-sess.close()
+#init an interactive session and automatically close 
+with tf.Session() as sess:
+    output = sess.run(result)
+    print(output)
