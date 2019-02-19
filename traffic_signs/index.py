@@ -1,5 +1,6 @@
 import os
 import skimage
+import matplotlib.pyplot as plt
 
 
 def load_data(data_directory):
@@ -32,3 +33,5 @@ train_data_directory = os.path.join(ROOT_PATH, "Training")
 test_data_directory = os.path.join(ROOT_PATH, "Testing")
 
 images, labels = load_data(train_data_directory)
+plt.hist(labels, 62)
+plt.show()
